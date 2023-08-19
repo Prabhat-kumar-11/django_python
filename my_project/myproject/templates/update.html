@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update</title>
+</head>
+<body>
+    <h1>Update Data</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="key">Key:</label>
+        <input type="text" name="key"><br>
+        <label for="value">Value:</label>
+        <input type="text" name="value"><br>
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>

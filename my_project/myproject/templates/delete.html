@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Delete</title>
+  </head>
+  <body>
+    <h1>Delete Data</h1>
+    <form method="post">
+      {% csrf_token %}
+      <label for="key">Key:</label>
+      <input type="text" name="key" /><br />
+      <input type="submit" value="Delete" />
+    </form>
+  </body>
+</html>
